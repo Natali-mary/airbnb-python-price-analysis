@@ -1,210 +1,199 @@
-# Kundenanalyse & Marketingstrategie mit Machine Learning
+# 🏠 Airbnb Python Price Analysis
 
 ## Projektübersicht
 
-Dieses Projekt analysiert Kundendaten eines Unternehmens, um Marketingkampagnen datenbasiert zu optimieren.
+Dieses Projekt wurde im Rahmen des Moduls **Python für Datenanalysten** durchgeführt.
 
-Mithilfe von Machine Learning, Clusteranalyse und explorativer Datenanalyse wurden Kundenverhalten, Kaufmuster und Reaktionswahrscheinlichkeiten untersucht.
+Ziel der Analyse war die Untersuchung von Airbnb-Angeboten in europäischen Städten, um Preisstrukturen, Einflussfaktoren auf Übernachtungspreise sowie Zusammenhänge zwischen Unterkunftsmerkmalen und Kundenzufriedenheit zu identifizieren.
 
-Das Ziel des Projekts besteht darin, personalisierte Marketingstrategien zu entwickeln und die Effizienz von Kampagnen zu erhöhen.
-
----
-
-## Projektpräsentation
-
-📄 Die vollständige Projektpräsentation:
-
-[PDF-Präsentation öffnen](presentation/marketingkampagne_praesentation.pdf)
+Die Analyse wurde vollständig in Python durchgeführt und umfasst Datenaufbereitung, explorative Datenanalyse (EDA), Visualisierung sowie die Ableitung geschäftsrelevanter Erkenntnisse.
 
 ---
 
-## Projektdateien
+## Fragestellung
 
-📓 Jupyter Notebook
+Im Mittelpunkt der Untersuchung standen folgende Fragen:
 
-Die vollständige Analyse, Datenaufbereitung und Modellierung befinden sich im Ordner:
+* Welche Faktoren beeinflussen den Preis einer Airbnb-Unterkunft?
+* Wie unterscheiden sich Preise zwischen verschiedenen Unterkunftstypen?
+* Welchen Einfluss haben Kapazität und Gastgebermerkmale auf den Preis?
+* Besteht ein Zusammenhang zwischen Kundenzufriedenheit und Preisniveau?
+* Unterscheiden sich Preise zwischen Wochenenden und Wochentagen?
 
-notebooks/
+---
 
-📊 Datensatz
+## Datensatz
 
-Der verwendete Datensatz befindet sich im Ordner:
+Verwendet wurde ein Airbnb-Datensatz mit Informationen zu:
 
-data/
+* Unterkunftspreisen
+* Unterkunftstypen
+* Gastgebermerkmalen
+* Kapazitäten
+* Bewertungen
+* Kundenzufriedenheit
+* Standortinformationen
+
+Datengrundlage:
+
+```text
+data/airbnb_full.csv
+```
+
+---
+
+## Datenaufbereitung
+
+Vor der Analyse wurden die Daten bereinigt und vorbereitet:
+
+* Prüfung auf fehlende Werte
+* Datentyp-Korrekturen
+* Entfernung fehlerhafter Einträge
+* Erstellung zusätzlicher Analysevariablen
+* Standardisierung relevanter Merkmale
+
+---
 
 ## Verwendete Technologien
 
+### Programmiersprache
+
 * Python
-* Jupyter Notebook
+
+### Bibliotheken
+
 * Pandas
 * NumPy
 * Matplotlib
 * Seaborn
-* Scikit-learn
-* PCA (Principal Component Analysis)
-* K-Means Clustering
-* Logistic Regression
+* Jupyter Notebook
+
+### Entwicklungsumgebung
+
+* Jupyter Notebook
+* Visual Studio Code
+* Git
+* GitHub
 
 ---
 
-## Datengrundlage
+## Explorative Datenanalyse
 
-Der Datensatz enthält Informationen über:
+### Preisverteilung
 
-* demografische Merkmale
-* Kaufhistorie
-* Webaktivitäten
-* frühere Kampagnenreaktionen
-* Produktpräferenzen
+Analyse der Verteilung von Airbnb-Preisen sowie Identifikation von Ausreißern.
 
-Die Daten wurden bereinigt, transformiert und für die Modellierung vorbereitet.
+![Preisverteilung](images/price_distribution_1.png)
 
 ---
 
-## Projektziele
+### Marktanalyse
 
-* Analyse des Kundenverhaltens
-* Identifikation wichtiger Einflussfaktoren
-* Vorhersage der Kampagnenreaktion
-* Kundensegmentierung mit Clusteranalyse
-* Entwicklung datenbasierter Marketingstrategien
+Vergleich verschiedener Marktsegmente und Unterkunftsarten.
+
+![Marktanalyse](images/market_analysis.png)
 
 ---
 
-## Machine-Learning-Modell
+### Kapazitätsanalyse
 
-Zur Vorhersage der Kampagnenreaktion wurde eine logistische Regression verwendet.
+Untersuchung des Zusammenhangs zwischen Unterkunftsgröße und Preisniveau.
 
-### Modellbewertung
-
-| Metrik    | Ergebnis |
-| --------- | -------- |
-| Accuracy  | 0.81     |
-| Precision | 0.42     |
-| Recall    | 0.75     |
-| F1-Score  | 0.54     |
-| ROC-AUC   | 0.866    |
-
-Das Modell zeigt eine gute Fähigkeit zur Identifikation potenziell reagierender Kunden.
+![Kapazitätsanalyse](images/capacity_analysis_1.png)
 
 ---
 
-## Kundensegmente
+### Gastgeberanalyse
 
-Die Clusteranalyse identifizierte vier zentrale Kundengruppen:
+Analyse von Gastgebermerkmalen und deren Einfluss auf die Preisgestaltung.
 
-1. Inaktive Kunden
-2. Gelegenheitskäufer
-3. Premium-Stammkunden
-4. Preisorientierte Käufer
-
-Für jedes Segment wurden konkrete Marketingmaßnahmen entwickelt.
+![Gastgeberanalyse](images/host_analysis.png)
 
 ---
 
-## Strategische Marketingempfehlungen
+### Kundenzufriedenheit
 
-Basierend auf der Kundensegmentierung wurden für jede Kundengruppe individuelle Marketingmaßnahmen entwickelt.
+Untersuchung möglicher Zusammenhänge zwischen Preis und Zufriedenheit.
 
-![Strategische Marketing-Matrix](images/marketing_matrix.png)
+![Zufriedenheit](images/satisfaction_correlation.png)
+
+---
+
+### Wochenend- vs. Wochentagspreise
+
+Vergleich der Preisstrukturen zwischen Wochenenden und regulären Wochentagen.
+
+![Wochenende vs. Wochentag](images/weekend_vs_weekday.png)
+
+---
+
+## Zentrale Erkenntnisse
+
+Die Analyse zeigt mehrere relevante Zusammenhänge:
+
+* Größere Unterkünfte weisen im Durchschnitt höhere Preise auf.
+* Bestimmte Unterkunftstypen erzielen deutlich höhere Marktpreise.
+* Preise unterscheiden sich zwischen Wochenenden und Wochentagen.
+* Kundenzufriedenheit steht nicht zwangsläufig in direktem Zusammenhang mit höheren Preisen.
+* Gastgebermerkmale beeinflussen die Preisgestaltung messbar.
 
 ---
 
 ## Projektstruktur
 
 ```text
-data/               → Datensatz
-notebooks/          → Jupyter Notebook
-presentation/       → Projektpräsentation
-images/             → Visualisierungen
+airbnb-python-price-analysis
+│
+├── data/
+│   └── airbnb_full.csv
+│
+├── images/
+│   ├── capacity_analysis_1.png
+│   ├── capacity_analysis_2.png
+│   ├── host_analysis.png
+│   ├── market_analysis.png
+│   ├── price_distribution_1.png
+│   ├── price_distribution_2.png
+│   ├── satisfaction_correlation.png
+│   └── weekend_vs_weekday.png
+│
+├── notebooks/
+│   └── airbnb_analyse_Nataliia_Melnytska.ipynb
+│
+├── presentation/
+│   └── airbnb_analyse_praesentation.pdf
+│
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-## Wichtigste Erkenntnisse
+## Handlungsempfehlungen
 
-* Einkommen korreliert stark mit den Gesamtausgaben
-* Frühere Kampagnenreaktionen erhöhen die zukünftige Erfolgswahrscheinlichkeit
-* Premium-Kunden reagieren anders als rabattorientierte Käufer
-* Personalisierte Kampagnen sind effizienter als Massenmarketing
+Aus den Analyseergebnissen lassen sich folgende Empfehlungen ableiten:
 
----
-
-## Business Value
-
-Durch datengetriebene Kundensegmentierung können:
-
-* Marketingkosten reduziert werden
-* Conversion Rates steigen
-* Kundenbindung verbessert werden
-* unnötige Rabatte vermieden werden
+* Preisstrategien sollten Unterkunftsgröße und Kapazität berücksichtigen.
+* Gastgeber können durch gezielte Optimierung ihrer Angebote höhere Marktpreise erzielen.
+* Wochenendpreise bieten Potenzial für zusätzliche Umsatzsteigerungen.
+* Kundenzufriedenheit sollte unabhängig von der Preisgestaltung kontinuierlich verbessert werden.
 
 ---
 
-## Dateien
+## Mögliche Weiterentwicklung
 
-* Datensatz im CSV-Format
-* Jupyter Notebook mit vollständiger Analyse
-* Präsentation mit Business Insights
+Zukünftige Erweiterungen des Projekts könnten umfassen:
+
+* Entwicklung eines Preisprognose-Modells mit Machine Learning
+* Analyse saisonaler Effekte
+* Geografische Preisanalysen mit Kartenvisualisierung
+* Vergleich verschiedener europäischer Städte
+* Automatisierte Dashboard-Lösung mit Streamlit oder Power BI
 
 ---
 
 ## Autorin
 
-Nataliia Melnytska
+**Nataliia Melnytska**
 
-Data Analytics | Machine Learning | Marketing Analytics
-
----
-
-## Visualisierungen
-
-### Korrelationsmatrix
-
-![Korrelationsmatrix](images/correlation_heatmap.png)
-
----
-
-### Clusteranalyse
-
-![Clusteranalyse](images/cluster_visualisierung.png)
-
----
-
-### PCA 3D Visualisierung
-
-![PCA 3D](images/pca_3d.png)
-
----
-
-### ROC-Kurve
-
-![Konfusionsmatrix + ROC-Kurve](images/roc_curve.png)
-
----
-
-## Projektdateien
-
-### Präsentation
-
-Die vollständige Projektpräsentation befindet sich im Ordner:
-
-```text
-presentation/
-```
-
-### Jupyter Notebook
-
-Die vollständige Analyse, Datenaufbereitung und Modellierung befinden sich im Ordner:
-
-```text
-notebooks/
-```
-
-### Datensatz
-
-Der verwendete Datensatz befindet sich im Ordner:
-
-```text
-data/
-```
+Projekt im Rahmen des Moduls **Python für Datenanalysten**.
