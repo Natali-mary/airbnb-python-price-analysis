@@ -97,7 +97,9 @@ Analyse der Verteilung von Airbnb-Preisen sowie Identifikation von Ausreißern.
 
 Vergleich verschiedener Marktsegmente und Unterkunftsarten.
 
-![Marktanalyse](images/market_analysis.png)
+![Marktanalyse](images/market_analysis_1.png)
+
+![Marktanalyse](images/market_analysis_2.png)
 
 ---
 
@@ -113,7 +115,9 @@ Untersuchung des Zusammenhangs zwischen Unterkunftsgröße und Preisniveau.
 
 Analyse von Gastgebermerkmalen und deren Einfluss auf die Preisgestaltung.
 
-![Gastgeberanalyse](images/host_analysis.png)
+![Gastgeberanalyse](images/host_analysis_1.png)
+
+![Gastgeberanalyse](images/host_analysis_2.png)
 
 ---
 
