@@ -83,7 +83,13 @@ Vor der Analyse wurden die Daten bereinigt und vorbereitet:
 
 Analyse der Verteilung von Airbnb-Preisen sowie Identifikation von Ausreißern.
 
-![Preisverteilung](images/price_distribution_1.png)
+**Abbildung 1: Preisverteilung (Histogramm)**
+
+![Preisverteilung Histogramm](images/price_distribution_1.png)
+
+**Abbildung 2: Preisverteilung (Boxplot)**
+
+![Preisverteilung Boxplot](images/price_distribution_2.png)
 
 ---
 
@@ -99,7 +105,7 @@ Vergleich verschiedener Marktsegmente und Unterkunftsarten.
 
 Untersuchung des Zusammenhangs zwischen Unterkunftsgröße und Preisniveau.
 
-![Kapazitätsanalyse](images/capacity_analysis_1.png)
+![Kapazitätsanalyse](images/capacity_analysis.png)
 
 ---
 
