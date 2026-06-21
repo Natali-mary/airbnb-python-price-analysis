@@ -77,6 +77,16 @@ Vor der Analyse wurden die Daten bereinigt und vorbereitet:
 
 ---
 
+## Installation
+
+```bash
+git clone https://github.com/Natali-mary/airbnb-python-price-analysis.git
+cd airbnb-python-price-analysis
+pip install -r requirements.txt
+```
+
+---
+
 ## Explorative Datenanalyse
 
 ### Preisverteilung
