@@ -108,8 +108,8 @@ Vergleich verschiedener Marktsegmente und Unterkunftsarten.
 Untersuchung des Zusammenhangs zwischen Unterkunftsgröße und Preisniveau.
 
 <p align="center">
-  <img src="images/capacity_analysis_1.png" width="45%">
-  <img src="images/capacity_analysis_2.png" width="45%">
+  <img src="images/capacity_analysis_1.png" width="48%">
+  <img src="images/capacity_analysis_2.png" width="48%">
 </p>
 
 ---
