@@ -208,5 +208,3 @@ Zukünftige Erweiterungen des Projekts könnten umfassen:
 ## Autorin
 
 **Nataliia Melnytska**
-
-Projekt im Rahmen des Moduls **Python für Datenanalysten**.
